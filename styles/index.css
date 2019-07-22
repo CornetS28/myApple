@@ -16,7 +16,7 @@ body {
     background-size: cover;
 
 }
-
+/* 
 [href="link1"],
 [href="link2"] {
    
@@ -38,11 +38,11 @@ body {
     background: url('../images/play-icon.png') 96% .3em no-repeat;
     background-size: 31px 31px;
     padding-left: 3em;
-}
+} */
 
-[href="link2"]:hover {
+/* [href="link2"]:hover {
     text-decoration: underline white;
-}
+} */
 
 
   h1 {
@@ -89,14 +89,19 @@ nav ul li a:hover {
 
 
 
-header ul {
+header nav {
     display: flex; 
     flex-flow: row;
     border-radius: 4px;
     margin-left: 4rem;
+    
+  }
+
+ a{
+    text-decoration: none;
   }
   
-  header li {
+ header li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +114,7 @@ header ul {
     border: 1px solid rgb(100,100,100);
     border-left: none;
     color: white;
-  }
+  } 
   
   header li:hover {
     opacity:0.7;
@@ -148,31 +153,51 @@ header ul {
 
   footer {
     display: flex;
-    height: 90px;
+    height: 50px;
     font-size: 12px;
     color: rgb(100,100,100);
+  
+    
 
   }
-  
-  footer div {
-    width: 50%;
-    margin-bottom: 0rem;
+  /* nav img{
+    display: flex;
+  }
+   */
+  /* footer div {
+    width: 20%;
+   
+  } */
+  /* .first-part{
+    margin: 0;
+    
+  } */
+
+
+  ul {
+    list-style: none;
   }
   
-  footer span {
+  /* footer span {
     display: block;
     padding: 10px;
-  }
+  } */
   
-  footer ul {
-    display: flex;
-    flex-direction: row;
+  /* footer ul {
+     display: flex; 
+     flex-direction: row; 
     padding-bottom: 0px;
+    
+  } */
+  
+  /* .first-item-footer ul{
+    margin-left: 0px;
   }
   
   footer li {
     padding: 0 0px 0 0px;
     border-right: 1px solid rgb(100,100,100);
+    
   }
   
   aside {
@@ -183,9 +208,10 @@ header ul {
   aside ul {
     display: flex;
     flex-flow: row;
+    margin-bottom: 0rem;
     
   }
   
   aside img {
     width: 100%;
-  }
+  } */
