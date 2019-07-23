@@ -12,13 +12,21 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     background: url('../images/backgroundpic.jpg')  0 100% no-repeat;
-    max-height: 520px;
+    max-height: 522px;
     background-size: cover;
 
 }
+  [href="playVideo"] {
+    padding-top:  0.05;
+    padding-left: 40em;
+    font-size: 150%;
+    background: url('../images/play-icon.png') 96% .3em no-repeat;
+    background-size: 23px 23px;
+   
+  }
 
 
-  h1 {
+ main h1 {
     font-size: 60px;
     font-weight: 100;
     color :white;
@@ -29,27 +37,15 @@ body {
 } 
 
   
-h2 {
-    width: 65%;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.5em;
-    color :white;
-    margin-left: 220px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1;
-    
-}
-  
-h3 {
-    margin-bottom: 234px;
+main h3 {
+    margin-bottom: 107px;
     font-size: 20px;
     font-weight: 200;
     color :white;
     font-family: 'Roboto', sans-serif;
-    line-height: 1;
     margin-left: 440px;
+    margin-top: -1.5rem;
+   
 }
 h3:hover {
     text-decoration: underline;
@@ -58,6 +54,7 @@ h3:hover {
 
 nav ul li a:hover {
     background: rgba(51,51,51,0.6);
+    
 }
 
 
@@ -87,10 +84,30 @@ header ul {
   header li:hover {
     opacity:0.7;
   }
-  
+  [type="search"]:focus {
+    background: url('../images/search_icon2.png') 10px 50% no-repeat, white;
+    background-size: 12px 12px;
+    width: 95%;
+    margin-left: .3em;
+    transition-duration: 0.3s;
+}
   header li:first-of-type {
     border-radius: 4px 0 0 4px;
     border-left: 1px solid rgb(100,100,100);
+  }
+  main a {
+    text-decoration:none;
+  }
+
+ main h2{
+    width: 65%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color :white;
+    margin-left: 220px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
   }
   
   header li:last-of-type {
@@ -109,75 +126,97 @@ header ul {
   }
   
   input[name="search"] {
-    width: 80%;
-    color: #fff;
+    width: 70%;
+    color:  rgba(22, 21, 21, 0.6);
     border: none;
-    border-radius: 12px;
+    border-radius: 11px;
     border-top: 2px solid rgb(60,60,60);
     border-bottom: 1px solid rgb(160,160,160);
     background: linear-gradient(rgb(140,140,140), rgb(110,110,110) 50%, rgb(90,90,90) 51%, rgb(130,130,130));
     outline: none;
   }
-
-  footer {
-    display: flex;
-    height: 200px;
-    font-size: 12px;
-    color: rgb(100,100,100);
-    margin-left: -40px;
-
-  } 
-  
- footer div { 
-    width: 100%;
-    margin-bottom: 0rem;
-  }
-
-    footer span {
-    display: block;
-    font-size: 6px;
-    
-    
-
-  }
-  
-footer #fword{
-  margin-left: 20px;
-}
-  
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0px;
-  }
-  .second-item-footer li{
-    padding: 10px;
-    font-size: 12px;
-    
-  } 
-
-  footer .last-item {
-    margin-left: 40px;
-  }
-  footer li {
-    padding: 0 0px 0 0px;
-    border-right: 1px solid rgb(100,100,100);
+ .pictures .links{
+   width: 100%;
+   margin-left: -7px;
+   margin-right: -8px;
  }
-  
-  aside {
-    border-top: -1px solid #fff;
-    border-bottom: 1px solid #fff;
-  }
-  
-  aside, .second-item-footer ul {
-    display: flex;
-    flex-flow: row;
+
+
+.l2 {
+    background: url('../images/01.jpg') no-repeat;
+
+}
+.l3 {
+    background: url('../images/02.jpg') no-repeat;
+}
+
+.l4 {
+    background: url('../images/03.jpg') no-repeat;
+}
+
+.l5 {
+    background: url('../images/04.jpg') no-repeat;
+}
+.ls {
+  display: flex;
+  flex-flow: row;
+}
+.l2 a,
+.l3 a,
+.l4 a,
+.l5 a {
+    height: 100%;
+    display: block;
+} 
+.l2,
+.l3,
+.l4,
+.l5 {
+    grid-row: 4;
+   height: 12.5em;
     
-  }
-  ul {
-    list-style: none;
-  }
-  
-  aside img {
-    width: 100%;
-  } 
+}
+
+.l6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-content: center;
+    grid-column-gap: 5em;
+    grid-row-gap: 2em;
+    font-size: .6em;
+    color: dimgray;
+    padding-top: 1em;
+}
+
+.l6 p a {
+    text-decoration: none;
+    color: rgb(0, 133, 195);
+}
+
+.l6 p a:hover {
+    text-decoration: underline rgb(0, 133, 195);
+}
+
+.l6 p:nth-of-type(1) {
+    justify-self: right;
+}
+
+.l6 p:nth-of-type(2) {
+    justify-self: left;
+    padding-bottom: 2em;
+}
+
+.l6 p:nth-of-type(3) {
+    justify-self: center;
+    padding-left: 23.3em;
+    position: relative;
+    bottom: 1.5em;
+}
+
+[alt="flag icon"] {
+    position: relative;
+    left: 1em;
+    top: .8em;
+}
