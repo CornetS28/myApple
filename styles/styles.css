@@ -38,7 +38,7 @@ ul {
     height: 36px;
     text-shadow: 0 -1px black;
    
-    background: near-gradient(rgb(140,140,140), rgb(110,110,110) 50%, rgb(90,90,90) 51%, rgb(130,130,130));
+    
   }
   
   #nav-container {
@@ -212,7 +212,7 @@ div.item{
 .footer-item{
   height: 200px;
   width: 25%;
-  margin-block-start: 0;
+  
 }
 .item1{
   width: 100%;
