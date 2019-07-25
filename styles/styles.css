@@ -98,7 +98,7 @@ ul {
     border: 1px solid rgb(100,100,100);
     color: white;
     border-radius: 4px 0 0 4px;
-    border-left: 1px solid rgb(173, 14, 14); 
+    border-left: 1px solid rgba(54, 43, 43, 0.794);
     background-color: rgba(54, 43, 43, 0.794);
 
   } 
